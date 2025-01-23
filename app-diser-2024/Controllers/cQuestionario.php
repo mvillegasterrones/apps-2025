@@ -2,10 +2,10 @@
 session_start();
 require_once '../Models/mQuestionario.php';
 $instancia = new mQuestionario();
-$accion = $_POST['action'];
+$accion    = $_POST['action'];
 switch ($accion) {
     case 'get-info-escale':
-        $cod_mod  = $_SESSION['cod_mod'];
+        $cod_mod = $_SESSION['cod_mod'];
         break;
     case 'get-tbl-kit-aseo':
         $cod_mod  = $_SESSION['cod_mod'];
@@ -94,7 +94,7 @@ switch ($accion) {
         break;
     // ! INICIO - Encuesta 01
     case 'delete-enc-01':
-        $id = $_POST['id'];
+        $id       = $_POST['id'];
         $ejecutar = $instancia->delete_enc_01($id);
         echo json_encode($ejecutar);
         break;
@@ -152,12 +152,12 @@ switch ($accion) {
         break;
     // ! INICIO - Instrumento Nro. 03
     case 'delete-int-03':
-        $id = $_POST['id'];
+        $id       = $_POST['id'];
         $ejecutar = $instancia->delete_inst_03($id);
         echo json_encode($ejecutar);
         break;
     case 'get-reporte-inst-03':
-        $cod_mod = $_SESSION['cod_mod'];
+        $cod_mod  = $_SESSION['cod_mod'];
         $ejecutar = $instancia->get_reporte_inst_03($cod_mod);
         echo json_encode($ejecutar);
         break;
@@ -202,19 +202,18 @@ switch ($accion) {
         $txt_2_18             = $_POST['txt_2_18'];
         $txt_fecha_aplicacion = $_POST['txt_fecha_aplicacion'];
 
-
         $ejecutar = $instancia->set_instrumento_03($id, $action, $region, $cod_mod, $txt_dni, $txt_ape_nomb, $txt_cargo, $txt_mes_reporte, $txt_1_1, $txt_1_2, $txt_1_3, $txt_1_4, $txt_1_5, $txt_1_6, $txt_observaciones_1, $txt_2_1, $txt_2_2, $txt_2_3, $txt_2_4, $txt_2_5, $txt_2_6, $txt_2_7, $txt_2_8, $txt_2_9, $txt_2_10, $txt_2_11, $txt_2_12, $txt_2_13, $txt_2_13_temas, $txt_2_14, $txt_2_15, $txt_2_15_otro, $txt_2_16, $txt_2_16_otro, $txt_2_17, $txt_2_17_otro, $txt_2_18, $txt_fecha_aplicacion);
         echo json_encode($ejecutar);
         break;
     // ! FIN - Instrumento Nro. 03
     // ! INICIO - Instrumento Nro. 02
     case 'delete-int-02':
-        $id = $_POST['id'];
+        $id       = $_POST['id'];
         $ejecutar = $instancia->delete_inst_02($id);
         echo json_encode($ejecutar);
         break;
     case 'get-reporte-inst-02':
-        $cod_mod = $_SESSION['cod_mod'];
+        $cod_mod  = $_SESSION['cod_mod'];
         $ejecutar = $instancia->get_reporte_inst_02($cod_mod);
         echo json_encode($ejecutar);
         break;
@@ -262,14 +261,13 @@ switch ($accion) {
         $txt_3_8              = $_POST['txt_3_8'];
         $txt_observaciones_3  = $_POST['txt_observaciones_3'];
 
-
         $ejecutar = $instancia->set_instrumento_02($id, $action, $region, $cod_mod, $txt_datos_aplicador, $txt_cargo_aplicador, $txt_grado, $txt_tiempo_comida, $txt_mes_reporte, $txt_fecha_aplicacion, $txt_1_1, $txt_1_2, $txt_1_2_1, $txt_1_2_2, $txt_1_2_3, $txt_1_3, $txt_1_4, $txt_1_5, $txt_observaciones_1, $txt_2_1, $txt_2_1_1, $txt_2_1_2, $txt_2_1_3, $txt_2_2, $txt_2_2_1, $txt_2_2_2, $txt_2_2_3, $txt_2_2_4, $txt_2_3, $txt_2_4, $txt_2_5, $txt_observaciones_2, $txt_3_1, $txt_3_2, $txt_3_3, $txt_3_4, $txt_3_5, $txt_3_6, $txt_3_7, $txt_3_8, $txt_observaciones_3);
         echo json_encode($ejecutar);
         break;
     // ! FIN - Instrumento Nro. 02
     // ! INICIO - Instrumento Nro. 01
     case 'delete-int-01':
-        $id = $_POST['id'];
+        $id       = $_POST['id'];
         $ejecutar = $instancia->delete_inst_01($id);
         echo json_encode($ejecutar);
         break;
@@ -278,18 +276,18 @@ switch ($accion) {
         echo json_encode($ejecutar);
         break;
     case 'get-reporte-inst-01':
-        $cod_mod = $_SESSION['cod_mod'];
+        $cod_mod  = $_SESSION['cod_mod'];
         $ejecutar = $instancia->get_reporte_inst_01($cod_mod);
         echo json_encode($ejecutar);
         break;
     case 'get-preguntas-inst-01':
         $instrumento = $_POST['instrumento'];
-        $ejecutar = $instancia->get_preguntos_inst_01($instrumento);
+        $ejecutar    = $instancia->get_preguntos_inst_01($instrumento);
         echo json_encode($ejecutar);
         break;
     case 'save-update-inst-01':
         session_start();
-        $id = 0;
+        $id                   = 0;
         $action               = $_POST['action'];
         $region               = $_SESSION['d_dpto'];
         $cod_mod              = $_SESSION['cod_mod'];

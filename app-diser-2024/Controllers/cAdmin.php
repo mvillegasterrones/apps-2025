@@ -2,7 +2,7 @@
 session_start();
 require_once '../Models/mAdmin.php';
 $instancia = new mAdmin();
-$accion = $_POST['action'];
+$accion    = $_POST['action'];
 switch ($accion) {
     case 'get-chart-total-reports-by-region':
         $region  = $_POST['region'];
@@ -29,7 +29,7 @@ switch ($accion) {
         echo json_encode($ejecutar);
         break;
     case 'get-admin-totales-instrumentos':
-        $region = $_POST['region'];
+        $region   = $_POST['region'];
         $ejecutar = $instancia->get_admin_instrumentos($region);
         echo json_encode($ejecutar);
         break;
