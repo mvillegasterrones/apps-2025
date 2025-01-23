@@ -1,0 +1,241 @@
+:root {
+  --main-bg-color: white !important;
+  --main-bg-color-danger: #ff4324 !important;
+  --main-bg-color-warning: #ff8d3d !important;
+  --main-bg-color-grey: #1a2b3c !important;
+  --main-bg-color-dark: #020407 !important;
+  --main-bg-color-white: #f0f2f2 !important;
+  --main-bg-color-secondary: #224561 !important;
+  --main-text-color-danger: #ff4324 !important;
+  --main-text-color-warning: #ff8d3d !important;
+  --main-text-color-grey: #1a2b3c !important;
+  --main-text-color-dark: #020407 !important;
+  --main-text-color-white: #f0f2f2 !important;
+  --main-text-color-secondary: #224561 !important;
+
+  --main-textcolor-primary: #003E7D !important;
+  --main-textcolor-info: #08BCFB !important;
+  --main-bg-color-primary: #004383 !important;
+
+  --main-bgcolor-info: #08BCFB !important;
+
+  --main-bg-circle-out-focus: #56517e !important;
+  --main-bg-circle-in-focus: #1d1655 !important;
+}
+
+.text-color-warning-2 {
+  color: var(--main-text-color-warning) !important;
+}
+
+.multisteps-form__content .row div:hover {
+  border-radius: 15px;
+  border: .5px solid yellow !important;
+  color:  #ffd300 !important;
+  cursor: pointer;
+}
+
+.multisteps-form__content .row div:hover * {
+  color:  #ffd300 !important;
+}
+
+
+.modal .modal-content .modal-body *,
+.card-color-pastel * {
+  color: #b9e0f2 !important;
+}
+
+.card-color-pastel .icon-trash:hover {
+  color: red !important;
+}
+
+table tbody tr td:hover p,
+.card-color-pastel .table tbody tr:hover p {
+  color:  #ffd300 !important;
+}
+
+.dark-version .main-content {
+  color: #b9e0f2 !important;
+}
+
+/*.dark-version .main-content .card .item-selected,*/
+.dark-version .item-selected {
+  background-color: rgb(6, 18, 56);
+  /*border: .5px #14f195 solid;
+  color: #14f195 !important;*/
+  
+  /*border: .5px #ffd300 solid;
+  color: #ffd300 !important;*/
+
+  border: .5px #14f195 solid;
+  color: #14f195 !important;
+  text-decoration: underline;
+}
+
+.dark-version .item-selected i {
+  position: absolute; /* Establece la posición absoluta para el icono */
+  top: 5px; /* Coloca el icono en la parte superior */
+  left: 5px; /* Coloca el icono en la parte izquierda */
+  margin: 5px; /* Añade un margen alrededor del icono */
+  z-index: 1; /* Asegura que el icono esté por encima del contenido de la tarjeta */
+}
+
+.item-selected-table {
+  color: #14f195 !important;
+}
+
+.icon-navegator:hover {
+  cursor: pointer;
+  color: #ffd300 !important;
+}
+
+.system-logo {
+  width: 50%;
+  height: auto;
+}
+
+.text-system-green {
+  color: #14f195 !important; /*COLOR VERDE FOSFORECENTE: color: #14F195!important */
+}
+
+.text-system-yellow {
+  color: #ffd300 !important; /*COLOR VERDE FOSFORECENTE: color: #14F195!important */
+}
+
+.icon-yellow:hover {
+  color: #ffd300 !important; /*COLOR VERDE FOSFORECENTE: color: #14F195!important */
+}
+
+/* ! Icon SYSTEMA */
+.system-card {
+  display: flex;
+  border: 0px solid;
+  /*border: 1px solid #ccc;
+  border-radius: 5px;*/
+  overflow: hidden;
+  /*max-width: 300px;*/
+  cursor: pointer;
+}
+
+.system-card:hover {
+  background-color: rgb(6, 18, 56);
+  border: .5px #ffd300 /*#b9e0f2*/ solid;
+  color:  #ffd300 !important;
+  text-decoration: underline;
+}
+
+.system-card img {
+  opacity: 60%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.system-card:hover img, 
+.dark-version .item-selected img {
+  opacity: 100%;
+}
+
+.nav-item a:hover {
+  color: #ffd300 !important;
+  text-decoration: underline !important;
+}
+/*.system-card-content {
+  padding: 10px;
+}
+
+.system-card-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.system-card-description {
+  font-size: 14px;
+  color: #666;
+}*/
+
+/* ! Extraido externo */
+
+input,
+select,
+textarea {
+  padding: 2px;
+  /*background-color: transparent !important;*/
+  background-color: rgb(18, 29, 67) !important;
+  color: #7F92B0 !important; /*  #f0f4f7  */
+  border: 0.5px solid rgb(79, 77, 77) !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  /*background-color: #66ff99 !important;
+  color: #2646a4 !important;*/
+  border: 0.5px solid white !important;
+}
+
+.noFocus:focus,
+select.noFocus option {
+  background-color: #fff;
+  color: #6c7f90;
+}
+
+input[readonly] {
+  /*background-color: #ffffde !important;
+  color: #56728c !important;*/
+  background-color: #647F9C !important;
+  color: white !important;
+}
+
+*[disabled],
+*[disabled]:hover {
+  color: #9a9686 !important;
+  background-color: #525f7f !important;
+  border-color: #b2b2b2 !important;
+}
+button[disabled] s {
+  color: #9a9686;
+}
+input[disabled],
+input[disabled]:hover,
+select[disabled],
+select[disabled]:hover,
+textarea[disabled],
+textarea[disabled]:hover {
+  background-color: #fff9f5 !important;
+  border-color: #ffdac4;
+}
+
+button {
+  padding: 4px 10px;
+  background-color: #f0f4f7;
+  color: #2b65a1;
+}
+button:hover,
+button:focus {
+  background-color: #c8d7f7;
+  color: #043d7a;
+  border-color: #2b65a1;
+}
+
+button s {
+  text-decoration: underline;
+  color: #2b65a1;
+}
+
+label {
+  font-size: 11px;
+  font-family: Arial;
+  color: #2b65a1;
+}
+
+button.btnImg {
+  background: url("../imgs/disk.gif");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: transparent;
+  height: 25px;
+}
+
+.card p {
+  color: #b9e0f2 !important;
+}
